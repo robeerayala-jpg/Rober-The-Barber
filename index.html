@@ -3,37 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Robert Barber</title>
+<title>Rober The Barber</title>
 
 <style>
 body {
   margin: 0;
-  font-family: Arial;
-  background: #0f0f0f;
+  font-family: 'Arial', sans-serif;
+  background: #0b0b0b;
   color: white;
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+  url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70');
+  background-size: cover;
+  background-position: center;
   text-align: center;
 }
 
-header {
-  padding: 40px;
-}
-
 h1 {
-  font-size: 40px;
+  font-size: 45px;
+  margin: 0;
 }
 
 p {
-  color: #bbb;
+  color: #ccc;
 }
 
 .btn {
-  display: inline-block;
   margin-top: 20px;
-  padding: 12px 25px;
+  padding: 14px 30px;
   background: gold;
   color: black;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* SECCIONES */
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* SERVICIOS */
+.servicios {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #000;
+  color: #888;
 }
 </style>
 </head>
@@ -41,10 +82,29 @@ p {
 <body>
 
 <header>
-  <h1>Robert Barber</h1>
+  <h1>Rober The Barber</h1>
   <p>Cortes premium - Estilo profesional</p>
   <a class="btn" href="https://wa.me/5493624109499">Reservar turno</a>
 </header>
+
+<section>
+  <h2>Servicios</h2>
+  <div class="servicios">
+    <div class="card">Corte clásico</div>
+    <div class="card">Fade / Degradé</div>
+    <div class="card">Perfilado de barba</div>
+    <div class="card">Diseños personalizados</div>
+  </div>
+</section>
+
+<section>
+  <h2>Sobre mí</h2>
+  <p>Barbero profesional especializado en estilos modernos y clásicos. Atención personalizada y calidad premium.</p>
+</section>
+
+<footer>
+  © 2026 Rober The Barber
+</footer>
 
 </body>
 </html>
